@@ -1,70 +1,63 @@
-* {
+*{
     margin: 0;
     padding: 0;
-
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
-body {
-    background-color: #548687;
-    text-align: center;
-}
-
-.container {
-    height: 70vh;
-     display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.game {
-    height: 60vmin;
-    width: 60vmin;
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right bottom, #ebf4f5, #b5c6e0);   
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    gap: 1.5vmin;
-}
-.box{
-    height:18vmin;
-    width: 18vmin;
-    border-radius: 1rem;
-    border: none;
-    box-shadow:  0 0 1rem rgba(0,0,0,0.3);
-    font-size: 8vmin;
-    color: #b0413e;
-    background-color: #ffffc7;
+    align-items: center; 
 }
 
-#reset-btn {
-    padding:1rem;
-    font-size: 1.25rem;
-    background-color: #191913;
-    color: #fff;
-    border-radius: 1rem;
-    border: none;
-}
-
-#new-btn {
-     padding:1rem;
-    font-size: 1.25rem;
-    background-color: #191913;
-    color: #fff;
-    border-radius: 1rem;
-    border: none;
+.form-box{
+    width: 50%;
+    max-width: 400px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px 28px;
+    margin-inline: 20px;
 
 }
-
-#msg {
-    color: #ffffc7;
-    font-size: 5vmin;
+.form-box header h1{
+    text-align: center;
+    color: #5851e3;
 }
 
-.msg-container {
-    height: 20vmin;
+.form-box form{
+    margin-block: 30px;
 }
 
-.hide {
-    display: none;
+input{
+    width:100%;
+    padding: 18px 16px;
+    border:none;
+    outline: none;
+    border-radius: 4px;
+    background-color: #a3a3a331;
+    font-size: 16px;
+    margin: 12px 0;
+}
+a{ 
+    text-decoration: none;
+    color: #767676;
+    font-size: 14px;
+}
+input[type="button"]{
+    margin-block: 24px;
+    background-color: #5851e3;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 700px;
+    border-radius: 8px;
+    cursor:pointer;
+    transition: 4s;
+}
+
+input[type="button"]:haver{
+    background-color: #10449a;
 }
